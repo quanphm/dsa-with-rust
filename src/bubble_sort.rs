@@ -2,9 +2,10 @@ pub fn bubble_sort<T>(collection: &[T]) -> Vec<T>
 where
     T: Clone + PartialOrd,
 {
+    let length = collection.len();
     let mut result: Vec<T> = collection.into();
-    for i in 0..collection.len() - 1 {
-        for j in 0..collection.len() - i - 1 {
+    for i in 0..length - 1 {
+        for j in 0..length - i - 1 {
             if result[j] > result[j + 1] {
                 result.swap(j, j + 1)
             }
