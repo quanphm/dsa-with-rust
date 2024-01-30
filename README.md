@@ -1,1 +1,8 @@
-I'm learning DSA with Rust at the moment.
+# Implemented DSA
+
+- Bubble sort
+- Linear search
+- Binary search
+- Interpolation search
+
+
