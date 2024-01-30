@@ -1,5 +1,3 @@
-#![feature(test)]
-
 // Sorting
 pub mod bubble_sort;
 
