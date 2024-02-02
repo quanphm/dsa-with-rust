@@ -4,13 +4,13 @@ where
 {
     let len = collection.len();
     for i in 0..len {
-        let mut min = collection[i].to_owned();
+        let mut min = i;
         for j in i..len {
-            if collection[j] < min {
-                min = collection[j].to_owned();
-                collection.swap(i, j);
+            if collection[j] < collection[min] {
+                min = j;
             }
         }
+        collection.swap(i, min);
     }
 
     collection.to_vec()
